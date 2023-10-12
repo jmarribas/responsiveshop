@@ -1,2 +1,2 @@
 # responsiveshop
-Ejercicio para crear una tienda responsiva.
+Ejercicio de "html" y "css" para crear una tienda responsiva.
