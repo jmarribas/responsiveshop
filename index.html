@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +14,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <meta name="author" content="Jonathan Muñoz Arribas">
+  <meta name="keywords" content="tienda, música, intrumentos, music, shop, guitarras, bajos, baterías, pianos">
+  <meta name="description" content="Tienda online de instrumentos musicales">
   <title>Music Shop</title>
 </head>
 
@@ -19,6 +23,8 @@
   <Header>
     <nav>
       <div class="titleNav">
+        <input type="checkbox" name="menuCheck" id="menuCheck">
+        <label id="menu" for="menuCheck" class="material-symbols-outlined">menu</label>
         <a href="./index.html">
           <h1>Music Shop</h1>
         </a>
@@ -33,13 +39,13 @@
         </ul>
       </div>
       <div class="search">
-        <span class="material-symbols-outlined" id="lens" style="color: beige;">
+        <span class="material-symbols-outlined" id="lens">
           search
         </span>
         <input type="search" name="search" id="search" placeholder=" Buscar...">
-        <div>
-          <a href="#"><span class="material-symbols-outlined" style="color: beige;">person</span></a>
-          <a href="#"><span class="material-symbols-outlined" style="color: beige;">shopping_cart</span></a>
+        <div class="userAndCart">
+          <a href="#"><span class="material-symbols-outlined">person</span></a>
+          <a href="#"><span class="material-symbols-outlined">shopping_cart</span></a>
         </div>
       </div>
     </nav>
@@ -59,36 +65,105 @@
         <li><a href="#">TODO ACCESORIOS</a></li>
       </ul>
     </section>
-    <section>
-      <div class="specialOffer">
-        <div class="offer01"><img src="./assets/offer01.png" alt="Oferta 1" width="100%" loading="lazy">
+    <section class="specialOffers">
+      <article class="specialOffer">
+        <img src="./assets/offer01.png" alt="Oferta 1" loading="lazy">
+        <div class="textOffer01">
           <div>
             <H2>TU INSTRUMENTO A UN "CLICK"</H2>
             <p>Descubre todos nuestros productos y encuentras tus ofertas favoritas...</p>
           </div>
-        </div>
-        <div class="offer02"><img src="./assets/offer02.png" alt="Oferta 2" width="100%" loading="lazy"></div>
-        <div class="offer03"><img src="./assets/offer03.png" alt="Oferta 3" width="100%" loading="lazy"></div>
-        <div class="offer04"><img src="./assets/offer04.png" alt="Oferta 4" width="100%" loading="lazy"></div>
-        <div class="text01">
-          <h3>Baterías</h3>
-          <p><a href="#">COMPRAR AHORA</a></p>
-        </div>
-        <div class="text02">
-          <h3>Guitarras</h3>
-          <p><a href="#">COMPRAR AHORA</a></p>
-        </div>
-        <div class="text03">
-          <h3>Vientos</h3>
-          <p><a href="#">COMPRAR AHORA</a></p>
-        </div>
-      </div>
-    </section>
+      </article>
 
-    <section class="buyNow"></section>
-    <section class="shopCategory"></section>
+      <article class="offer02">
+        <a href="#"><img src="./assets/offer02.png" alt="Oferta 2" loading="lazy"></a>
+        <div class="textOffer02">
+          <h3>Baterías</h3>
+          <a href="#">COMPRAR AHORA</a>
+        </div>
+      </article>
+
+      <article class="offer03">
+        <a href="#"><img src="./assets/offer03.png" alt="Oferta 3" loading="lazy"></a>
+        <div class="textOffer03">
+          <h3>Guitarras</h3>
+          <a href="#">COMPRAR AHORA</a>
+        </div>
+      </article>
+
+      <article class="offer04">
+        <a href="#"><img src="./assets/offer04.png" alt="Oferta 4" loading="lazy"></a>
+        <div class="textOffer04">
+          <h3>Vientos</h3>
+          <a href="#">COMPRAR AHORA</a>
+        </div>
+      </article>
+
+    </section>
+    <section class="technology">
+      <article>
+        <div>
+          <h3>Tecnología de vanguardia...</h3>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur alias est iste illo exercitationem,
+            aliquam
+            quasi itaque facilis possimus, ipsam placeat totam vero eveniet quisquam aperiam excepturi, magni
+            reprehenderit!
+            Id!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor asperiores minus reprehenderit, enim
+            deserunt, porro vel iste, quo sequi delectus consequatur culpa. Facere sapiente esse, sunt consequuntur
+            perspiciatis enim doloremque.</p>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aperiam officiis autem. Maiores,
+            praesentium molestiae nisi cupiditate, nesciunt alias nihil minima nulla officia ad animi adipisci, deserunt
+            ipsum! A, excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe facere non
+            voluptates vero maxime minus sunt pariatur commodi quam animi modi, ipsam nobis iusto dolor. Veniam,
+            pariatur
+            quis. Saepe!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores modi impedit quos
+            voluptate
+            iste, consequuntur commodi quisquam ipsum? Aperiam necessitatibus iusto quis expedita nemo, adipisci ipsa.
+            Esse
+            voluptas ea quaerat.</p>
+          <br>
+          <a href="#">Más información...</a>
+        </div>
+        <div class="technologyImg"><img src="./assets/technology.png" alt="Tegnología"></div>
+      </article>
+
+    </section>
+    <section class="shopCategory">
+      <h3>COMPRAR POR CATEGORÍA</h3>
+      <ul>
+        <li><img src="./assets/catGuitarras.webp" alt="Guitarras">Guitarras</li>
+        <li><img src="./assets/catBajos.webp" alt="Bajos">Bajos</li>
+        <li><img src="./assets/catBaterias.webp" alt="Baterías">Baterías</li>
+        <li><img src="./assets/catTeclados.webp" alt="Teclados">Teclados</li>
+        <li><img src="./assets/catVientos.webp" alt="Vientos">vientos</li>
+        <li><img src="./assets/catAccesorios.webp" alt="Accesorios">Accesorios</li>
+      </ul>
+
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+    <section class="conditions">
+      <ul>
+        <li><a href="#">Condiciones Generales</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Derecho de desestimiento</a></li>
+        <li><a href="#">Hacer/completar pedido</a></li>
+        <li><a href="#">Derechos de garantía</a></li>
+      </ul>
+    </section>
+    <section class="aboutMe">
+      <ul>
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Clasificados</a></li>
+      </ul>
+    </section>
+    <section class="copyright">
+      <p>&copy; 2023 Music Shop</p>
+    </section>
+  </footer>
 </body>
 
 </html>
